@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+#mainimg{
+    width: 100vw;
+    height: 33vh;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+}
+#mainimg>img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; */
+}
+#heading1{
+    font-weight: 700;
+    color: white;
+}
+@media (max-width:600px) {
+    #mainimg{
+        height: 36vh;
+    }
+    #mainimg>img{
+        height: 100%;
+    }
+    
+}

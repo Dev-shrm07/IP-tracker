@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track The IP</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body style="position: relative">
+    <header>
+      <div id="mainimg">
+        <img src="images/pattern-bg.png" alt="" />
+      </div>
+    </header>
+    <div id="map"></div>
+    <div id="search-box">
+      <h1>IP Address Tracker</h1>
+      <div id="input-box">
+        <input
+          type="text"
+          id="inp"
+          placeholder="Search for any IP address or domain"
+          value = ""
+        />
+        <img src="images/icon-arrow.svg" alt="" id="arrow" onclick="getip()"/>
+      </div>
+      <div id="srch-results">
+        <div class="data-box" id="box-1">
+          <p class="data-heading">IP ADDRESS</p>
+          <p class="data-text" id="ip">876328764287</p>
+        </div>
+        <div class="data-box" id="box-2">
+          <p class="data-heading">LOCATION</p>
+          <p class="data-text" id="location">Delhi</p>
+        </div>
+        <div class="data-box" id="box-3">
+          <p class="data-heading">TIMEZONE</p>
+          <p class="data-text" id="timezone">UTC</p>
+        </div>
+        <div class="data-box" id="box-4">
+          <p class="data-heading">ISP</p>
+          <p class="data-text" id="isp">JIO</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</html>
