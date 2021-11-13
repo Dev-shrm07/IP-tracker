@@ -9,6 +9,8 @@
     color: #2B2B2B;
     font-size: 1.5rem;
     margin-top: 0.4em;
+    width: 100%;
+    word-wrap: break-word;
 }
 .data-box{
     display: flex;
